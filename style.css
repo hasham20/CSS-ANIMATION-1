@@ -1,0 +1,47 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+    display: flex;
+    font-size: x-large;
+    border: 2px solid black;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+    left: 50px;
+    animation: box 8s linear 1.5s infinite alternate;
+}
+@keyframes box{
+    0%{
+        background-color: red;
+        left: 50px;
+        top: 50px;
+        transform: rotate(0deg);
+    }
+    25%{
+        background-color: blue;
+        transform: rotate(90deg);
+        left: 500px;
+        top: 50px;
+    }
+    50%{
+        background-color: green;
+        transform: rotate(180deg);
+        left: 500px;
+        top: 500px;
+    }
+    75%{
+        background-color: yellow;
+        transform: rotate(270deg);
+        left: 50px;
+        top: 500px;
+    }
+    100%{
+        background-color: orangered;
+        transform: rotate(360deg);
+        left: 50px;
+        top: 50px;
+    }
+}
